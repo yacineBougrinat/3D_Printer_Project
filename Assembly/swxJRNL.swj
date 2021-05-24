@@ -1,0 +1,121 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 05/09/16 by Yacine
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = _
+Application.SldWorks
+
+Set Part = swApp.OpenDoc6("D:\Study\Projects\3D_PrinterProject\Assembly\assembly3D_Printer_v2.SLDASM", 2, 0, "", longstatus, longwarnings)
+swApp.ActivateDoc2 "assembly3D_Printer_v2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+boolstatus = Part.Extension.SelectByID2("steelTube-9@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("extruderHolder-1@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+boolstatus = Part.Extension.SelectByID2("sideCover-2@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("sideCover-1@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+boolstatus = Part.Extension.SelectByID2("sideCover-2@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+boolstatus = Part.Extension.SelectByID2("steelTube-15@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+boolstatus = Part.Extension.SelectByID2("steelTube-15@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.HideComponent2
+Part.ClearSelection2 True
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateplusy
+boolstatus = Part.Extension.SelectByID2("sideShaftHolder-2@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+boolstatus = Part.Extension.SelectByID2("SK10UU_shaftHolder-7@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+boolstatus = Part.Extension.SelectByID2("shaft10mm-3@assembly3D_Printer_v2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ShowComponent2
+Part.ClearSelection2 True
+Part.ViewRotateplusx
+Part.ViewRotateplusx
+Part.ViewRotateplusy
+Part.ViewRotateminusx
+Part.ViewRotateminusx
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+Part.ViewRotateminusy
+' MSGBOX
+' Save changes to assembly3D_Printer_v2.SLDASM?
+
+swApp.ExitApp
+End Sub

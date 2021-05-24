@@ -1,0 +1,10 @@
+-----------------------------
+Couvercle Tube = 8
+Tube Carré Inférieur = 2
+Tube Carré Supérieur = 2
+-----------------------------
+Base = 1
+Support Plaque Chauffante = 1
+Tole Arrière = 1
+Tole Avant = 1
+-----------------------------
